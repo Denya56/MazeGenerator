@@ -7,7 +7,7 @@
 using namespace std;
 using namespace sf;
 
-#define cellSize 10.f
+#define cellSize 12.f
 
 class Cell
 {

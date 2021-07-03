@@ -1,7 +1,10 @@
 #include "Cell.h"
 #include <thread>
+#include <chrono>
 
 using namespace this_thread;
+using namespace std::chrono_literals;
+using std::chrono::system_clock;
 
 #define WINDOW_WIDTH 400
 #define WINDOW_HEIGHT 400
@@ -42,6 +45,7 @@ void removeWalls(Cell* a, Cell* b)
 
 int main()
 {
+	srand(time(0));
 	for (int i = 0; i < rows; i++)
 		for (int j = 0; j < cols; j++)
 		{

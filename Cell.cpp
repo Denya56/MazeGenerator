@@ -85,10 +85,10 @@ Cell* Cell::getNeighbours(vector<Cell>* vc, const int rows, const int cols)
 			neighbours.push_back(left);
 	}
 	catch (char e){}
-	srand(time(0));
 	
 	if (neighbours.size() > 0)
 	{
+		
 		int r = (rand() % neighbours.size());
 		return neighbours.at(r);
 	}
@@ -107,7 +107,4 @@ void Cell::highlight(RenderWindow* window)
 	window->draw(rectangle);
 }
 
-Cell::~Cell()
-{
-
-}
+Cell::~Cell(){}
